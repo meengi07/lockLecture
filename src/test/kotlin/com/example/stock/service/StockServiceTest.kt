@@ -17,7 +17,7 @@ import java.util.concurrent.ThreadPoolExecutor
 @SpringBootTest
 class StockServiceTest(
     @Autowired
-    private var stockService: StockService,
+    private var stockService: PessimisticLockStockService,
     @Autowired
     private var stockRepository: StockRepository
 ) {
